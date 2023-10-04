@@ -31,7 +31,7 @@ jobs:
           name: dist-files
           path: |
             dist
-            packge.json
+            package.json
 
 
   deploy:
