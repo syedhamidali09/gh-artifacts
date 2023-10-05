@@ -15,6 +15,7 @@ jobs:
         run: npm run lint
       - name: Test code
         run: npm run test
+
   build:
     needs: test
     runs-on: ubuntu-latest
@@ -41,7 +42,6 @@ jobs:
           path: |
             dist
             package.json
-
 
   deploy:
     needs: build
